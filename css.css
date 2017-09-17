@@ -1,12 +1,14 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 .banner {
 	background-color: red;
 	position: relative;
 	text-align: center;
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	line-height:20px;
 }
 
 a {
@@ -17,6 +19,7 @@ a {
 ul.menu li{
 	display: inline-block;
 	padding: 10px;
+	position: relative;
 }
 ul{
 	list-style: none;
@@ -24,11 +27,24 @@ ul{
 ul.submenu {
 	display: none;
 	position: absolute;
-	top: 20px;
+	top: 40px;
 	left: 0px;
-	width: 100px;
+	width: 100%;
 	background-color: blue;
 }
 .desplegable:hover ul.submenu{
 display: block;
+}
+
+ul.menu li:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+ul.submenu li{
+	width: 100%;
+}
+ul.submenu li:hover{
+	background-color: #fafafa;
+}
+ul.submenu li:hover a{
+	color: black;
 }
